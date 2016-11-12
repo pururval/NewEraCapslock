@@ -11,7 +11,7 @@ function myMap(){
 
   var mapOptions = {
     center: mapCenter,
-    zoom: 3,
+    zoom: 4,
     //mapTypeId: google.maps.MapTypeId.HYBRID
   };
   var map = new google.maps.Map(mapCanvas, mapOptions);
