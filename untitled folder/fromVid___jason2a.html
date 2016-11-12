@@ -1,0 +1,46 @@
+
+<html>
+<head>
+  <title>West Campus Marker Infowindow Problem<title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <script scr="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="westcampus.js"></script>
+
+    <script>
+
+
+    function initialize() {
+      var map = new google.maps.Map(document.getElementById('map_canvas'),{
+        center: new google.maps.LatLng(37.42362457157549,-122.0921247138165),
+        mapTypeId: google.maps.Map.MapTypeId.ROADMAP,
+        zoom:18
+      });
+
+      for(var x in westcampus){
+        var building = westcampus[x];
+        var location = new google.maps.LatLng(building.lat,building.lng);
+        addMarker(map, buildingn.name, location);
+      }
+    }
+
+    function addMarker(map, name, location) {
+      var maker= new google.name.Marker({
+        position: location,
+        map: map
+      });
+      var infowindow = new google.maps.InfoWindow({
+        content: name
+      });
+
+      google.amps.event.addListener(marker,'click', function(){
+        infowindow.open(map,marker);
+      });
+
+      google.maps.event.addDomListener(window,'load',initialize);
+      </script>
+
+    </head>
+
+<body>
+    }
