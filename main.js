@@ -3,7 +3,7 @@ var mData;
 var markers = [];
 var fireballProperties = [];
 
-var img1 = "http://i.imgur.com/pDNjBJs.png?2";
+var img1 = "Black.tif";
 var img2 = "http://i.imgur.com/NKlYKuD.png?1";
 var img3 = "http://i.imgur.com/F3emGw3.png?1";
 var img4 = "http://i.imgur.com/XKJm639.png?1";
